@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: poppins;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Playfair Display;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(5, auto);
+}
+
+.container .header {
+    grid-column: 1/13;
+    grid-row: 1;
+}
+
+.container .section1 {
+    background: red;
+    grid-column: 2 / span 6;
+    grid-row: 2;
+}
+
+
+.container .sidebar1 {
+    background: tomato;
+    grid-column: 8 / span 4;
+    grid-row: 2;
+}
+
+.container .section2 {
+    background: red;
+    grid-column: 2 / span 6;
+    grid-row: 3;
+}
+
+.container .sidebar2 {
+    background: yellow;
+    grid-column: 8 / span 4;
+    grid-row: 3;
+}
+
+.container .sidebar3 {
+    background: yellow;
+    grid-column: 8 / span 4;
+    grid-row: 4;
+}
+
+
+.container .footer {
+    grid-column: 1/13;
+    grid-row: 5;
+    background: cyan;
+}
+
+header h1, 
+header p {
+    text-align: center;
+}
+
+header h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    
+}
+
+header p span{
+    color: white;
+    background: black;
+}
+
+
